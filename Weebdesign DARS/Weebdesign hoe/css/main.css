@@ -359,6 +359,7 @@ label{
   display:none;
   width:26px;
   float:right;
+  color:white;
 }
 #toggle{
   display:none;
@@ -372,7 +373,6 @@ label{
   min-height:80vh;
   align-items:center;
   padding:16px;
-  z-index:-3;
 }
 .introduction{
   flex:1;
@@ -384,7 +384,6 @@ label{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation:drop 1.5s ease;
-  z-index:-3;
 }
 .intro-text p{
   margin-top:5px;
@@ -393,7 +392,6 @@ label{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation:drop 1.5s ease;
-  z-index:-3;
 }
 .cover{
   flex:1;
@@ -697,12 +695,13 @@ label{
     padding-right:10px;
     padding-top:60px;
     text-align:center;
+    z-index: 3;
   }
   label{
     display:block;
     cursor:pointer;
   }
-  #navlink, .home, .introduction{
+  #navlink, #home, .introduction{
     float:none;
     text-align:center;
   }
