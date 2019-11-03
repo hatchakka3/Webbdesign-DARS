@@ -412,7 +412,7 @@ label{
   color:black;
   animation:drop 1.5s ease;
 }
-#aboutText p{
+#aboutText{
   text-align:center;
   margin-top:5px;
   font-size:22px;
@@ -436,7 +436,7 @@ label{
   color:black;
   animation:drop 1.5s ease;
 }
-#offerText p{
+#offerText{
   text-align:center;
   margin-top:5px;
   font-size:22px;
@@ -628,13 +628,13 @@ label{
   .aboutHead h2{
     font-size:22px;
   }
-  #aboutText p{
+  #aboutText{
     font-size:15px;
   }
   .offerHead h2{
     font-size:22px;
   }
-  #offerText p{
+  #offerText{
     font-size:15px;
   }
   #projects h2{
