@@ -271,7 +271,8 @@ textarea {
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  background-color:black;
+  background-color:white;
+  color:black;
 }
 
 header {
@@ -291,9 +292,7 @@ header {
   flex:1;
 }
 .logo-container h1{
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 #navlink{
@@ -311,9 +310,7 @@ header {
   padding:14px;
   font-size:18px;
   text-decoration:none;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 /*----StickyMenu----*/
@@ -341,16 +338,16 @@ header {
 }
 #hambLinks a{
   margin-top:30px;
-  color:white;
+  color:black;
   clear:right;
   text-decoration:none;
   margin: 0 0px;
   line-height:70px;
-  background-color:rgba(0, 0, 0, 0.377);
+  background-color:lightgrey);
 }
 #hambLinks a:hover{
-  background-color:rgba(255, 255, 255, 0.726);
-  color:white;
+  background-color:black;
+  color:lightgrey;
 }
 label{
   margin: 0 40px 0 0 ;
@@ -359,7 +356,7 @@ label{
   display:none;
   width:26px;
   float:right;
-  color:white;
+  color:black;
 }
 #toggle{
   display:none;
@@ -380,17 +377,13 @@ label{
 .intro-text h2{
   font-size:44px;
   font-weight:500;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 .intro-text p{
   margin-top:5px;
   font-size:22px;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 .cover{
@@ -416,18 +409,14 @@ label{
   margin-top:30px;
   font-size:44px;
   font-weight:500;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 #aboutText p{
   text-align:center;
   margin-top:5px;
   font-size:22px;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 
@@ -444,18 +433,14 @@ label{
   margin-top:30px;
   font-size:44px;
   font-weight:500;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 #offerText p{
   text-align:center;
   margin-top:5px;
   font-size:22px;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
 }
 
@@ -485,9 +470,7 @@ label{
     margin-bottom:10px;
     font-size:44px;
     font-weight:500;
-    background: linear-gradient(to right, #494964, #6f6f89);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    color:black;
     animation:drop 1.5s ease;
 }
 
@@ -523,7 +506,7 @@ label{
   height: 15px;
   width:15px;
   margin:0 2px;
-  background-color:lightgray;
+  background-color:black;
   border-radius: 50%;
   display:inline-block;
   transition: background-color 0.6s ease;
@@ -550,9 +533,7 @@ label{
   margin-top:30px;
   font-size:44px;
   font-weight:500;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
   width:100%;
 }
@@ -560,9 +541,7 @@ label{
   text-align:center;
   margin-top:5px;
   font-size:22px;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
   width:100%
 }
@@ -570,9 +549,7 @@ label{
   text-align:center;
   margin-top:5px;
   font-size:22px;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  color:black;
   animation:drop 1.5s ease;
   padding-bottom:10px;
   width:100%;
@@ -679,7 +656,7 @@ label{
   } 
   #hambLinks a {
     display:block;
-    border-bottom:1px solid rgb(185, 185, 185);
+    border-bottom:1px solid black;
   }
   #toggle:checked + #hambLinks{
     display:block;
