@@ -343,7 +343,7 @@ header {
   text-decoration:none;
   margin: 0 0px;
   line-height:70px;
-  background-color:lightgrey);
+  background-color:lightgrey;
 }
 #hambLinks a:hover{
   background-color:black;
@@ -559,11 +559,9 @@ label{
 @keyframes drop{
   0%{
     opacity:0;
-    transform: tranlateY(-80px);
   }
   100%{
     opacity:1;
-    transform: tranlateY(0px);
   }
 }
 @media only screen and (max-width:1024px){
