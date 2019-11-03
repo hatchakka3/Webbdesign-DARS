@@ -27,27 +27,32 @@
     <div class="logo-container" id="home">
       <h1>DARS, Exklusiv marksten</h1>
     </div>
-    <nav>
-      <ul class="navlink">
-        <li><a class="navlinks" href="#home">Hem</a></li>
-        <li><a class="navlinks" href="#about">Om oss</a></li>
-        <li><a class="navlinks" href="#offer">Vad vi erbjuder</a></li>
-        <li><a class="navlinks" href="#projects">Vad vi gjort</a></li>
-        <li><a class="navlinks" href="#contact">Kontakt</a></li>
+    <nav id="navlink">
+      <ul>
+        <li><a href="#home">Hem</a></li>
+        <li><a href="#about">Om oss</a></li>
+        <li><a href="#offer">Vad vi erbjuder</a></li>
+        <li><a href="#projects">Vad vi gjort</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
-      <div class="hamburgerMenu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
     </nav>
+    <div id="hamburgerMenu">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div id="hambLinks">
+          <a href="#home">Hem</a>
+          <a href="#about">Om oss</a>
+          <a href="#offer">Vad vi erbjuder</a>
+          <a href="#projects">Vad vi gjort</a>
+          <a href="#contact">Kontakt</a>
+    </div>
   </header>
   <!---Mainsection--->
   <main>
-    <section class="home" id="home">
+    <section id="home">
       <div class="introduction">
         <div class="intro-text">
-          <h1>Välkomna till DARS</h1>
+          <h2>Välkomna till DARS</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur nemo? Veritatis quia deleniti suscipit vel distinctio earum sequi in modi minus placeat! Nisi in accusamus vel eius odio repellendus!</p>
         </div>
       </div>
@@ -58,7 +63,7 @@
   </main>
 
   <!---AboutPage--->
-  <section class="about" id="about">
+  <section about="about" id="about">
     <div class="aboutHead">
       <h2>Om oss</h2>
       <article id="aboutText">
@@ -79,7 +84,7 @@
 
   <!---ProjectsPage--->
   <section>
-  <div class="slideshow" id="projects">
+  <div class="slideShow" id="projects">
 
     <h2>Vad vi gjort</h2>
 

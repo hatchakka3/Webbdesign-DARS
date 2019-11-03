@@ -283,7 +283,7 @@ header {
 }
 
 /*----Menu----*/
-.logo-container, .navlink{
+.logo-container, #navlink ul{
   display: flex;
 }
 
@@ -296,20 +296,72 @@ header {
   -webkit-text-fill-color:transparent;
   animation:drop 1.5s ease;
 }
-nav{
+#navlink{
   flex:2;
+  overflow: hidden;
 }
-.navlink{
+#navlink ul{
   justify-content: space-around;
   list-style: none;
 }
-.navlinks{
+#navlink li a{
+  float:right;
+  display:block;
+  text-align: center;
+  padding:14px;
   font-size:18px;
   text-decoration:none;
   background: linear-gradient(to right, #494964, #6f6f89);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation:drop 1.5s ease;
+}
+/*----StickyMenu----*/
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%
+}
+.sticky + .home{
+  padding-top:60px;
+}
+
+/*----Mobile----*/
+#hamburgerMenu{
+  padding:0px;
+  margin-top:-93px;
+  text-align:right;
+  height:10px;
+  line-height:70px;
+  padding-top:10px;
+}
+#hambLinks{
+  margin: 0 30px 0 0;
+  display:none;
+}
+#hambLinks a{
+  margin-top:30px;
+  color:white;
+  clear:right;
+  text-decoration:none;
+  margin: 0 0px;
+  line-height:70px;
+  background-color:rgba(0, 0, 0, 0.377);
+}
+#hambLinks a:hover{
+  background-color:rgba(255, 255, 255, 0.726);
+  color:white;
+}
+label{
+  margin: 0 40px 0 0 ;
+  font-size: 26px;
+  line-height:70px;
+  display:none;
+  width:26px;
+  float:right;
+}
+#toggle{
+  display:none;
 }
 
 /*----Mainsection----*/
@@ -319,18 +371,20 @@ nav{
   margin:auto;
   min-height:80vh;
   align-items:center;
+  padding:16px;
+  z-index:-3;
 }
 .introduction{
   flex:1;
-  padding:16px;
 }
-.intro-text h1{
+.intro-text h2{
   font-size:44px;
   font-weight:500;
   background: linear-gradient(to right, #494964, #6f6f89);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation:drop 1.5s ease;
+  z-index:-3;
 }
 .intro-text p{
   margin-top:5px;
@@ -339,6 +393,7 @@ nav{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation:drop 1.5s ease;
+  z-index:-3;
 }
 .cover{
   flex:1;
@@ -357,7 +412,6 @@ nav{
   min-height:80vh;
   align-items:center;
   flex:1;
-  padding:16px;
 }
 .aboutHead h2{
   text-align:center;
@@ -386,7 +440,6 @@ nav{
   min-height:80vh;
   align-items:center;
   flex:1;
-  padding:16px;
 }
 .offerHead h2{
   text-align:center;
@@ -422,13 +475,13 @@ nav{
   object-fit: cover;
   object-position: 50% 80%;
 }
-.slideshow{
+.slideShow{
   position:relative;
   margin:auto;
   padding-bottom:0px;
 }
 
-.slideshow h2{
+.slideShow h2{
     text-align:center;
     margin-top:30px;
     margin-bottom:10px;
@@ -584,38 +637,17 @@ nav{
   .cover img{
     display:none;
   }
-  .line{
-    width:30px;
-    height:3px;
-    background:white;
-    margin:5px;
-  }
-  nav {
+  #navlink {
+    overflow:hidden;
     position:relative;
   }
-  .hamburgerMenu{
-    position:absolute;
-    cursor:pointer;
-    right:5%;
-    top:50%;
-    transform:translate(-5%, -50%);
-    z-index:2;
-  }
-  .navlink{
-    position:fixed;
-    background:green;
-    height:100vh;
-    width:100%;
-    flex-direction: column;
-    clip-path:circle(100px at 90% -10%);
-    -webkit-clip-path:circle(100px at 90% -10%);
-    transition: all 1s ease-out;
-    pointer-events:none;
-  }
-  .navlink.open{
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path:circle(1000px at 90% -10%);
-    pointer-events:all;
+  #navlink li a{
+    display:none;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float:left;
   }
   .home{
     flex-direction:column;
@@ -632,7 +664,7 @@ nav{
   #offerText p{
     font-size:15px;
   }
-  .slideshow h2{
+  #projects h2{
     font-size:22px;
   }
   #email{
@@ -641,6 +673,40 @@ nav{
   #tfn{
     font-size:15px;
   }
+  #hambLinks{
+    margin-top:30px;
+    text-align:center;
+    width:100%;
+    display:none;
+  } 
+  #hambLinks a {
+    display:block;
+    border-bottom:1px solid rgb(185, 185, 185);
+  }
+  #toggle:checked + #hambLinks{
+    display:block;
+  }
+  #navlink ul{
+    display:none;
+  }
+  #navlink li{
+    top:0;
+    right:0;
+    margin:0;
+    padding:0;
+    padding-right:10px;
+    padding-top:60px;
+    text-align:center;
+  }
+  label{
+    display:block;
+    cursor:pointer;
+  }
+  #navlink, .home, .introduction{
+    float:none;
+    text-align:center;
+  }
 }
+
 
 

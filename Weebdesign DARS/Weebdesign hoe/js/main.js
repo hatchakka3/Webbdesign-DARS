@@ -30,3 +30,18 @@ function showSlides(n) {
     return "slideImages";
   }
 }
+
+window.onscroll = function() {myFunction()};
+
+var navlink = document.getElementById("navlink");
+
+var sticky = navlink.offsetTop;
+
+function myFunction(){
+  if(window.pageYOffset >= sticky){
+    navlink.classList.add("sticky")
+  }
+  else{
+    navlink.classList.remove("sticky");
+  }
+}
